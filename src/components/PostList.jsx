@@ -3,7 +3,7 @@ import { fetchPosts, fetchTags, addPost } from '../api/index.js';
 import { useState } from 'react';
 import Modal from './Modal.jsx';
 
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 
 const PostList = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
