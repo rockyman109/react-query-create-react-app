@@ -1,6 +1,6 @@
 const fetchPosts = async (page) => {
   const response = await fetch(
-    `http://localhost:3000/posts?_sort=-id&${
+    `http://localhost:4000/posts?_sort=-id&${
       page ? `_page=${page}&_per_page=10` : ""
     }`
   );
@@ -14,7 +14,7 @@ const fetchPosts = async (page) => {
 };
 
 const fetchTags = async () => {
-  const response = await fetch("http://localhost:3000/tags");
+  const response = await fetch("http://localhost:4000/tags");
   if (!response.ok) {
     throw new Error(`Failed to fetch posts. Status: ${response.status}`);
   }
@@ -24,7 +24,7 @@ const fetchTags = async () => {
 };
 
 const addPost = async (post) => {
-  const response = await fetch("http://localhost:3000/posts", {
+  const response = await fetch("http://localhost:4000/posts", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
