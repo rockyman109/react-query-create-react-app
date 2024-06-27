@@ -25,7 +25,7 @@ const PostList = () => {
         staleTime: 1000 * 60 * 5,
     });
 
-    console.log("listData===", listData);
+    // console.log("listData===", listData);
 
     const { data: tagsData } = useQuery({
         queryKey: ["tags"],
@@ -56,7 +56,8 @@ const PostList = () => {
 
         if (!title || !tags.length) return;
         const payload = {
-            id: uuidv4(),
+            id: String(listData?.items+1),
+            // id: uuidv4(),
             title,
             tags,
         };
@@ -66,6 +67,7 @@ const PostList = () => {
         closeModal(); // close modal after submission
     };
 
+    console.log("error==",error);
     return (
         <div className="container mx-auto p-4 max-w-4xl bg-gray-100">
             <div className="flex justify-end mb-2">
