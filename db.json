@@ -250,39 +250,6 @@
         "love",
         "fiction"
       ]
-    },
-    {
-      "id": "31",
-      "title": "new post1",
-      "tags": [
-        "crime"
-      ]
-    },
-    {
-      "id": "32",
-      "title": "new post 2",
-      "tags": [
-        "english",
-        "fiction"
-      ]
-    },
-    {
-      "id": "fd8be185-8a0e-465e-ab4b-24f7381c82dd",
-      "title": "faizan",
-      "tags": [
-        "classic",
-        "crime"
-      ]
-    },
-    {
-      "id": "b610df4a-4f08-44e5-b121-58c50ef15e6a",
-      "title": "new post 1",
-      "tags": [
-        "crime",
-        "fiction",
-        "history",
-        "magical"
-      ]
     }
   ],
   "tags": [
